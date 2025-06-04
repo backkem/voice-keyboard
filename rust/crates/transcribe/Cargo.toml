@@ -1,0 +1,16 @@
+[package]
+name = "transcribe"
+version = "0.1.0"
+edition = "2021"
+
+[[example]]
+name = "transcribe"
+path = "examples/transcribe.rs"
+
+[dependencies]
+whisper-rs = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+tokio = { workspace = true }
+hound = { workspace = true }
+num_cpus = { workspace = true }

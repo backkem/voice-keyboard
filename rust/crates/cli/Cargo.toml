@@ -1,0 +1,16 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "voicekb"
+path = "src/main.rs"
+
+[dependencies]
+audio = { path = "../audio" }
+keyctl = { path = "../keyctl" }
+transcribe = { path = "../transcribe" }
+enigo = "0.3"
+
+anyhow = { workspace = true }

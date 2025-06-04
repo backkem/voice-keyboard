@@ -1,0 +1,12 @@
+[package]
+name = "keyctl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rdev = { version = "0.5.3", features = ["unstable_grab"] }
+enigo = "0.3"
+
+[[example]]
+name = "push-to-write"
+path = "examples/push-to-write.rs"
